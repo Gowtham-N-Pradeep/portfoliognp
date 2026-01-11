@@ -29,7 +29,7 @@ export default function Skills() {
               <span className="w-2 h-2 bg-primary rounded-full"></span>
               Skills & Expertise
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                <h2 className="text-4xl md:text-5xl font-bold text-indigo-700 dark:text-indigo-300">
               Skills & Tech Stack
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -41,7 +41,7 @@ export default function Skills() {
             {skillsByCategory.map(({ category, items }) => (
               <div key={category} className="space-y-8">
                 <div className="flex items-center gap-4">
-                  <h3 className="text-3xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">
+                    <h3 className="text-3xl font-bold text-slate-800 dark:text-slate-200">
                     {category}
                   </h3>
                   <div className="flex-1 h-px bg-gradient-to-r from-primary/50 to-transparent"></div>

@@ -31,7 +31,7 @@ export default function Projects() {
               <span className="w-2 h-2 bg-primary rounded-full"></span>
               Portfolio Showcase
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold text-rose-700 dark:text-rose-300">
               Featured Projects
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

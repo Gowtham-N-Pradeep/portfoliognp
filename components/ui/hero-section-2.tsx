@@ -62,10 +62,10 @@ export function HeroSection2() {
                                             <p className="text-lg md:text-xl font-medium text-primary">
                                                 Hello, I'm
                                             </p>
-                                            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 dark:from-white dark:via-blue-200 dark:to-purple-200 bg-clip-text text-transparent leading-tight">
+                                            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-blue-700 dark:text-blue-300 leading-tight">
                                                 Gowtham N Pradeep
                                             </h1>
-                                            <p className="text-xl sm:text-2xl md:text-2xl lg:text-3xl font-semibold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                                            <p className="text-xl sm:text-2xl md:text-2xl lg:text-3xl font-semibold text-purple-700 dark:text-purple-300">
                                                 BCA Student & Cybersecurity Enthusiast
                                             </p>
                                         </div>
@@ -235,6 +235,32 @@ export const HeroHeader = () => {
                             </button>
 
                         </div>
+
+                        {/* Mobile Menu Dropdown */}
+                        <div className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+                            menuState ? "max-h-96 opacity-100 pb-4" : "max-h-0 opacity-0"
+                        }`}>
+                            <div className="bg-background/95 dark:bg-background/95 backdrop-blur-md border-t border-border/50 shadow-lg rounded-b-xl mx-2">
+                                <div className="px-4 py-3 space-y-1">
+                                    {menuItems.map((item, index) => (
+                                        <a
+                                            key={item.name}
+                                            href={item.href}
+                                            onClick={(e) => {
+                                                e.preventDefault();
+                                                setMenuState(false);
+                                                const target = document.querySelector(item.href);
+                                                target?.scrollIntoView({ behavior: 'smooth' });
+                                            }}
+                                            className="block px-4 py-3 text-foreground hover:bg-accent rounded-lg transition-all duration-200 hover:translate-x-1 font-medium"
+                                            style={{ transitionDelay: `${index * 50}ms` }}
+                                        >
+                                            {item.name}
+                                        </a>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
                     </div>
             </nav>
         </header>
@@ -245,7 +271,7 @@ export const HeroHeader = () => {
 
 const Logo = ({ className }: { className?: string }) => {
     return (
-        <div className={cn('font-bold text-xl sm:text-2xl bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent', className)}>
+        <div className={cn('font-bold text-xl sm:text-2xl text-blue-700 dark:text-blue-300', className)}>
             GNP
         </div>
     )

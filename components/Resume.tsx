@@ -17,7 +17,7 @@ export default function Resume() {
               <span className="w-2 h-2 bg-primary rounded-full"></span>
               Professional Journey
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold text-cyan-700 dark:text-cyan-300">
               Resume & Experience
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -41,7 +41,7 @@ export default function Resume() {
                   <GraduationCap className="text-blue-600" size={28} />
                 </div>
                 <div>
-                  <h3 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+                  <h3 className="text-3xl font-bold text-blue-600 dark:text-blue-400">
                     Education
                   </h3>
                   <p className="text-muted-foreground">Academic journey</p>
@@ -91,7 +91,7 @@ export default function Resume() {
                       <Briefcase className="text-green-600" size={28} />
                     </div>
                     <div>
-                      <h3 className="text-3xl font-bold bg-gradient-to-r from-green-600 to-green-800 bg-clip-text text-transparent">
+                      <h3 className="text-3xl font-bold text-green-600 dark:text-green-400">
                         Experience
                       </h3>
                       <p className="text-muted-foreground">Professional background</p>
@@ -140,7 +140,7 @@ export default function Resume() {
                     <Trophy className="text-orange-600" size={28} />
                   </div>
                   <div>
-                    <h3 className="text-3xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
+                    <h3 className="text-3xl font-bold text-orange-600 dark:text-orange-400">
                       Achievements
                     </h3>
                     <p className="text-muted-foreground">Key accomplishments</p>
@@ -190,7 +190,7 @@ export default function Resume() {
                       <Award className="text-purple-600" size={28} />
                     </div>
                     <div>
-                      <h3 className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
+                      <h3 className="text-3xl font-bold text-purple-600 dark:text-purple-400">
                         Certifications
                       </h3>
                       <p className="text-muted-foreground">Professional credentials</p>

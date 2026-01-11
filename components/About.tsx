@@ -30,7 +30,7 @@ export default function About() {
           className="space-y-16"
         >
           <div className="text-center space-y-4">
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-emerald-700 dark:text-emerald-300">
               About Me
             </h2>
             <p className="text-2xl font-semibold text-foreground max-w-3xl mx-auto">
